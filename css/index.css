@@ -4,4 +4,91 @@ Dark: #212426
 LightDarK: #555E66
 Green: #7EBA18
 Blue: #08A1FF
+Orange: #f58400
+Red: #BC0002
 */
+
+/* Global
+====================================================== */
+@font-face {
+    font-family:ng;
+    src:url(../font/NanumGothic.eot);
+    src:local(※), url(../font/NanumGothic.woff) format('woff')
+}
+
+html {width: 100%; height: 100%}
+body {width: 100%; height: 100%; font-family:NanumGothic,'나눔고딕',ng,sans-serif; overflow: hidden}
+#wrap {width: 100%; height:100%}
+
+body {
+    background: #212426;
+}
+
+
+/* Header
+====================================================== */
+
+#header {
+    background: white;
+    height: 70px;
+}
+
+#header .status {
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#header .time {
+    font-size: 10pt;
+    text-align: center;
+}
+
+/* Container
+====================================================== */
+
+#container {
+    width: 100%;
+    height: 100%
+}
+
+#container .menu {
+    position: absolute;
+}
+
+#container .menu .btn {
+    width: 70px;
+    height: 70px;
+    background: #555E66;
+    float:left;
+    text-align: center;
+    margin: 5px;
+    font-size: 9pt;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#container .menu .btn:hover {
+    background: #08A1FF;
+}
+
+
+/* Footer
+====================================================== */
+
+/* Others
+====================================================== */
+
+.green {
+    color: #7EBA18;
+}
+
+.blue {
+    color: #08A1FF;
+}
+
+.red {
+    color: #BC0002;
+}

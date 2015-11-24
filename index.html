@@ -12,29 +12,74 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="js/jquery-ui.min.css">
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script src="js/index.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="wrap">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+            <div id="header">
+
+                <div class="status green"> The System is Safe. </div>
+                <div class="time"> </div>
+
+            </div>
+
+            <div id="container">
+
+                <div class="menu">
+                    <div class="btn">
+                        <img src="img/icon/ic_add_circle_white_18dp.png">
+                        <span> Add </span>
+                    </div>
+                    <div class="btn">
+                        <img src="img/icon/ic_open_with_white_18dp.png">
+                        <span> Edit </span>
+                    </div>
+                    <div class="btn">
+                        <img src="img/icon/ic_equalizer_white_18dp.png">
+                        <span> Statistic </span>
+                    </div>
+                </div>
+
+                <div class="home">
+
+                </div>
+
+                <div class="statistic">
+
+                    <div class="realtime"></div>
+
+                    <div class="daily"></div>
+
+                </div>
+
+                <div class="tool">
+
+                </div>
+
+            </div>
+
+            <div id="footer">
+
+            </div>
+
+        </div>
+
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
