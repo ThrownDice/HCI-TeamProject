@@ -507,7 +507,7 @@
 			           ],
 				isMac = (navigator.platform.indexOf("Mac") >= 0),
 				isWebkit = (navigator.userAgent.indexOf("AppleWebKit") >= 0),
-				modKey = (isMac ? "meta+" : "ctrl+"), // âŒ˜
+				modKey = (isMac ? "meta+" : "ctrl+"), // ?Œ˜
 				path = svgCanvas.pathActions,
 				undoMgr = svgCanvas.undoMgr,
 				Utils = svgedit.utilities,

@@ -378,7 +378,7 @@ canvas.undoMgr = new svgedit.history.UndoManager({
 				}
 				// This is resolved in later versions of webkit, perhaps we should
 				// have a featured detection for correct 'use' behavior?
-				// â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+				// ?”â?”â?”â?”â?”â?”â?”â?”â?”â??
 				// Remove & Re-add hack for Webkit (issue 775) 
 				//if(cmd.elem.tagName === 'use' && svgedit.browser.isWebkit()) {
 				//	var elem = cmd.elem;

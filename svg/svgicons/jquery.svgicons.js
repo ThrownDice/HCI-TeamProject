@@ -131,7 +131,7 @@ $(function() {
 	var svg_icons = {}, fixIDs;
 
 	$.svgIcons = function(file, opts) {
-		var svgns = "http://www.w3.org/2000/svg",
+		/*var svgns = "http://www.w3.org/2000/svg",
 			xlinkns = "http://www.w3.org/1999/xlink",
 			icon_w = opts.w?opts.w : 24,
 			icon_h = opts.h?opts.h : 24,
@@ -186,7 +186,7 @@ $(function() {
 						}
 					}
 				});
-			}
+			}*/
 			
 		function getIcons(evt, no_wait) {
 			if(evt !== 'ajax') {

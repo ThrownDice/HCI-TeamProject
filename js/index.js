@@ -33,7 +33,11 @@
     }, 1000);
 
 
+    //initialize ui
     $(function() {
+        setTimeout(function() {
+            $('#tool_select img').attr('src', 'img/icon/ic_cursor_white_24dp.png');
+        }, 1000);
 
 
     });

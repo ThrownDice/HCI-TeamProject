@@ -152,3 +152,47 @@ body {
 #canvasBackground {
     display: none;
 }
+
+#tools_left {
+    top: 100px;
+    left: 10px;
+    background: transparent;
+}
+
+#tools_rect {
+    left: 50px;
+    top: 200px;
+}
+
+#tools_rect {
+    left: 50px;
+    top: 200px;
+}
+
+#tools_rect {
+    left: 50px;
+    top: 200px;
+}
+
+#tools_ellipse {
+    left: 50px;
+    top: 237px;
+}
+
+.tool_button {
+     -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #555E66;
+}
+
+.tool_button_current {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #f58400;
+}
+
+#tools_shapelib_show, #tool_eyedropper {
+    display: none;
+}

@@ -12,7 +12,7 @@
         <!-- For svg canvas -->
         <script src="svg/jquery.js"></script>
 
-        <link rel="icon" type="image/png" href="svg/images/logo.png"/>
+        <!--<link rel="icon" type="image/png" href="svg/images/logo.png"/>-->
         <link rel="stylesheet" href="svg/jgraduate/css/jPicker.css" type="text/css"/>
         <link rel="stylesheet" href="svg/jgraduate/css/jgraduate.css" type="text/css"/>
         <link rel="stylesheet" href="svg/svg-editor.css" type="text/css"/>
@@ -447,19 +447,21 @@
 
 
                             <div id="tools_left" class="tools_panel">
-                                <div class="tool_button" id="tool_select" title="Select Tool"></div>
-                                <div class="tool_button" id="tool_fhpath" title="Pencil Tool"></div>
-                                <div class="tool_button" id="tool_line" title="Line Tool"></div>
+                                <div class="tool_button" id="tool_select" title="Select Tool"><img src="img/icon/ic_cursor_white_24dp.png"></div>
+                                <div class="tool_button" id="tool_fhpath" title="Pencil Tool"><img src="img/icon/ic_create_white_24dp.png"></div>
+                                <div class="tool_button" id="tool_line" title="Line Tool"><img src="img/icon/ic_trending_neutral_black_24dp.png"></div>
                                 <div class="tool_button flyout_current" id="tools_rect_show" title="Square/Rect Tool">
-                                    <div class="flyout_arrow_horiz"></div>
+                                    <!--<div class="flyout_arrow_horiz"></div>-->
+                                    <img src="img/icon/ic_crop_3_2_white_24dp.png">
                                 </div>
                                 <div class="tool_button flyout_current" id="tools_ellipse_show" title="Ellipse/Circle Tool">
-                                    <div class="flyout_arrow_horiz"></div>
+                                    <!--<div class="flyout_arrow_horiz"></div>-->
+                                    <img src="img/icon/ic_panorama_fisheye_white_24dp.png">
                                 </div>
-                                <div class="tool_button" id="tool_path" title="Path Tool"></div>
-                                <div class="tool_button" id="tool_text" title="Text Tool"></div>
-                                <div class="tool_button" id="tool_image" title="Image Tool"></div>
-                                <div class="tool_button" id="tool_zoom" title="Zoom Tool [Ctrl+Up/Down]"></div>
+                                <div class="tool_button" id="tool_path" title="Path Tool" style="display:none"></div>
+                                <div class="tool_button" id="tool_text" title="Text Tool"><img src="img/icon/ic_text_format_white_24dp.png"></div>
+                                <div class="tool_button" id="tool_image" title="Image Tool"><img src="img/icon/ic_image_white_24dp.png"></div>
+                                <div class="tool_button" id="tool_zoom" title="Zoom Tool [Ctrl+Up/Down]" style="display:none"></div>
 
                                 <div style="display: none">
                                     <div id="tool_rect" title="Rectangle"></div>
