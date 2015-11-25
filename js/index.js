@@ -33,5 +33,10 @@
     }, 1000);
 
 
+    $(function() {
+
+
+    });
+
 
 })(window, document);
