@@ -927,7 +927,7 @@ span.zoom_tool {
 }
 
 #tool_stroke.color_tool {
-	width: 130px;
+	/*width: 130px;*/
 	z-index: 2;
 	-webkit-transition: width 150ms ease;
 	-moz-transition: width 150ms ease;

@@ -12,7 +12,6 @@
         <!-- For svg canvas -->
         <script src="svg/jquery.js"></script>
 
-        <!--<link rel="icon" type="image/png" href="svg/images/logo.png"/>-->
         <link rel="stylesheet" href="svg/jgraduate/css/jPicker.css" type="text/css"/>
         <link rel="stylesheet" href="svg/jgraduate/css/jgraduate.css" type="text/css"/>
         <link rel="stylesheet" href="svg/svg-editor.css" type="text/css"/>
@@ -504,27 +503,29 @@
                                     <div id="color_tools">
 
                                         <div class="color_tool" id="tool_fill">
-                                            <label class="icon_label" for="fill_color" title="Change fill color"></label>
+                                            <label class="icon_label" for="fill_color" title="Change fill color" style="border:none" ></label>
+                                            <img src="img/icon/ic_format_color_fill_black_18dp.png" style="margin-left:-5px;margin-top:7px;">
                                             <div class="color_block">
                                                 <div id="fill_bg"></div>
-                                                <div id="fill_color" class="color_block"></div>
+                                                <div id="fill_color" class="color_block" style="border:1px solid #212426;margin-top:2px;"></div>
                                             </div>
                                         </div>
 
                                         <div class="color_tool" id="tool_stroke">
-                                            <label class="icon_label" title="Change stroke color"></label>
+                                            <label class="icon_label" title="Change stroke color" style="display:none"></label>
+                                            <img src="img/icon/ic_border_color_black_18dp.png" style="margin-left:5px;margin-top:6px;">
                                             <div class="color_block">
                                                 <div id="stroke_bg"></div>
-                                                <div id="stroke_color" class="color_block" title="Change stroke color"></div>
+                                                <div id="stroke_color" class="color_block" title="Change stroke color" style="border:1px solid #212426;margin-top:2px;"></div>
                                             </div>
 
-                                            <label class="stroke_label">
+                                            <label class="stroke_label" style="display:none">
                                                 <input id="stroke_width" title="Change stroke width by 1, shift-click to change by 0.1" size="2" value="5" type="text" data-attr="Stroke Width"/>
                                             </label>
 
-                                            <div id="toggle_stroke_tools" title="Show/hide more stroke tools"></div>
+                                            <div id="toggle_stroke_tools" title="Show/hide more stroke tools" style="display:none"></div>
 
-                                            <label class="stroke_tool">
+                                            <label class="stroke_tool" style="display:none">
                                                 <select id="stroke_style" title="Change stroke dash style">
                                                     <option selected="selected" value="none">&mdash;</option>
                                                     <option value="2,2">...</option>
@@ -534,12 +535,12 @@
                                                 </select>
                                             </label>
 
-                                            <div class="stroke_tool dropdown" id="stroke_linejoin">
+                                            <div class="stroke_tool dropdown" id="stroke_linejoin" style="display:none">
                                                 <div id="cur_linejoin" title="Linejoin: Miter"></div>
                                                 <button></button>
                                             </div>
 
-                                            <div class="stroke_tool dropdown" id="stroke_linecap">
+                                            <div class="stroke_tool dropdown" id="stroke_linecap" style="display:none">
                                                 <div id="cur_linecap" title="Linecap: Butt"></div>
                                                 <button></button>
                                             </div>
@@ -598,7 +599,7 @@
 
 
                             <!-- hidden divs -->
-                            <div id="color_picker"></div>
+                            <div id="color_picker" style="left:0px"></div>
 
                         </div> <!-- svg_editor -->
                         <div id="svg_source_editor">

@@ -138,6 +138,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
+    overflow: hidden;
 }
 
 #svgcanvas {
@@ -179,6 +180,11 @@ body {
     top: 237px;
 }
 
+#tools_bottom {
+    top: 335px;
+    left: 2px;
+}
+
 .tool_button {
      -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -193,6 +199,28 @@ body {
     background: #f58400;
 }
 
-#tools_shapelib_show, #tool_eyedropper {
+.color_tool {
+    background-color: #555E66;
+}
+
+.fill_color {
+    border: none;
+}
+
+#tool_fill {
+    left: 12px;
+}
+
+#tool_stroke {
+    left: 12px;
+    top: 30px;
+}
+
+#tool_opacity {
+    left: 12px;
+    top: 60px;
+}
+
+#tools_shapelib_show, #tool_eyedropper, #sidepanels, #palette_holder, #zoom_panel, #tool_opacity {
     display: none;
 }
