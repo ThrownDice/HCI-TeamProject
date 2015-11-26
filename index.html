@@ -783,6 +783,11 @@
                         </ul>
                     </div>
 
+                    <div id="home-block"></div>
+
+                    <div id="node-container">
+                    </div>
+
                 </div>
 
                 <div class="statistic">
@@ -793,22 +798,22 @@
 
                 </div>
 
-                <div class="tool">
-
-                </div>
-
                 <div class="menu">
-                    <div class="btn">
+                    <div class="btn btn-add">
                         <img src="img/icon/ic_add_circle_white_18dp.png">
                         <span> Add </span>
                     </div>
-                    <div class="btn">
+                    <div class="btn btn-edit">
                         <img src="img/icon/ic_open_with_white_18dp.png">
                         <span> Edit </span>
                     </div>
-                    <div class="btn">
+                    <div class="btn btn-statistic">
                         <img src="img/icon/ic_equalizer_white_18dp.png">
                         <span> Statistic </span>
+                    </div>
+                    <div class="btn btn-home">
+                        <img src="img/icon/ic_home_white_18dp.png">
+                        <span> Home </span>
                     </div>
                 </div>
 
@@ -821,13 +826,27 @@
 
         </div>
 
+        <div class="dialog dialog-add-node" title="Add New Node">
+            <div>
+                <span class="dialog-content"><label for="new_node_id"> 노드 ID </label></span>
+                <input type="text" id="new_node_id" placeholder="node id">
+                <img src="img/icon/ic_cached_blue_18dp.png" class="dialog-icon icon-load">
+                <img src="img/icon/ic_done_green_18dp.png" class="dialog-icon icon-done">
+                <img src="img/icon/ic_clear_red_18dp.png" class="dialog-icon icon-fail">
+                <div class="dialog-search-status"> 노드를 찾을 수 없습니다. </div>
+            </div>
+            <div>
+                <span class="dialog-content"><label for="new_node_name"> 노드 이름 </label></span>
+                <input type="text" id="new_node_name" placeholder="node name">
+            </div>
+            <input type="hidden" id="new_node_check">
+        </div>
+
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <script>
-            //initialize svg canvas
-            $('#rulers').css('display','none');
         </script>
 
     </body>

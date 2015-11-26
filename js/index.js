@@ -3,6 +3,45 @@
  */
 (function() {
 
+    var model = {};
+
+    model.nodeList = [];
+    model.nodeCount = 0;
+
+    model.addNode = function(node) {
+        node.tickData = node.tickData ? node.tickData : {};
+        model.nodeList.push(node);
+    };
+
+    model.getNode = function(nodeId) {
+        var len = model.nodeList.length;
+        for (var i=0; i<len; i++) {
+            var node = model.nodeList[i];
+            if (node.nodeId == nodeId) {
+                return node;
+            }
+        }
+    };
+
+    model.deleteNode = function(nodeId) {
+        var len = model.nodeList.length;
+        for (var i=0; i<len; i++) {
+            var node = model.nodeList[i];
+            if (node.nodeId == nodeId) {
+                model.nodeList.splice(i);
+                break;
+            }
+        }
+    };
+
+    model.getNodeTemplate = function(node) {
+      var html = '<div class="node" id="node-' + node.nodeId + '">'
+        + '<div class="node-id">' + node.nodeId + '</div>'
+        + '<div class="node-name">' + node.nodeName + '</div>'
+        + '</div>';
+        return html;
+    };
+
     Date.prototype.format = function(f) {
         if (!this.valueOf()) return " ";
 
@@ -32,13 +71,64 @@
         $( '#header .time' ).html(new Date().format("yyyy-MM-dd E  hh:mm:ss"));
     }, 1000);
 
-
     //initialize ui
     $(function() {
-        setTimeout(function() {
-            $('#tool_select img').attr('src', 'img/icon/ic_cursor_white_24dp.png');
-        }, 1000);
 
+        //initialize dialog
+        var add_dialog = $( '.dialog-add-node' ).dialog({
+            resizable: false,
+            autoOpen: false,
+            modal: true,
+            buttons: {
+                "추가" : function() {
+                    var node = {};
+                    node.nodeId = $(this).find('#new_node_id').val();
+                    node.nodeName = $(this).find('#new_node_name').val();
+
+                    model.addNode(node);
+
+                    var $html = $(model.getNodeTemplate(node)).draggable();;
+                    //$('#node-container').append($html);
+                    $('#svg').append($html);
+                    $(this).dialog( 'close' );
+                },
+                "닫기" : function () {
+                    $(this).dialog( 'close' );
+                }
+            }
+        });
+
+        //initialize event handler
+        $('.btn-add').on('click', function() {
+            add_dialog.dialog( 'open' );
+        });
+
+        $('.btn-edit').on('click', function() {
+
+            $('#container').find('#home-block').hide();
+            $('#tools_left').show();
+            $('#tools_bottom').show();
+
+            $('.btn-add').hide();
+            $('.btn-edit').hide();
+            $('.btn-statistic').hide();
+            $('.btn-home').show();
+
+        });
+
+
+        $('.btn-home').on('click', function() {
+
+            $('#container').find('#home-block').show();
+            $('#tools_left').hide();
+            $('#tools_bottom').hide();
+
+            $('.btn-add').show();
+            $('.btn-edit').show();
+            $('.btn-statistic').show();
+            $('.btn-home').hide();
+
+        });
 
     });
 

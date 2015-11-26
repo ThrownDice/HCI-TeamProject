@@ -83,6 +83,103 @@ body {
     top: 70px;
 }
 
+#container .home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#container #home-block {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+#container #node-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+
+#container .node {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    color: white;
+    background-color: #7EBA18;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#container .node .node-id {
+    font-size: 9pt;
+}
+
+#container .node .node-name {
+    font-size: 12pt;
+}
+
+.btn-home {
+    display: none;
+}
+
+/** Dialog (Add New Node) **/
+.dialog-content {
+    width: 70px;
+    text-align: center;
+    display: inline-block;
+    margin : 6px 0 6px 0;
+}
+
+.dialog input {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #555E66;
+    text-align: center;
+    width: 180px;
+}
+
+.dialog .dialog-icon {
+    display: none;
+}
+
+.dialog .icon-load  {
+    -webkit-animation: cssAnimation 1s 16 ease;
+    -moz-animation: cssAnimation 1s 16 ease;
+    -o-animation: cssAnimation 1s 16 ease;
+}
+@-webkit-keyframes cssAnimation {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes cssAnimation {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-o-keyframes cssAnimation {
+    from { -o-transform: rotate(0deg); }
+    to { -o-transform: rotate(360deg); }
+}
+
+.dialog .icon-done {
+}
+
+.dialog .icon-fail {
+}
+
+.dialog-search-status {
+    color: #BC0002;
+    font-size: 10pt;
+    text-align: center;
+    display: none;
+}
 
 /* Footer
 ====================================================== */
@@ -223,4 +320,15 @@ body {
 
 #tools_shapelib_show, #tool_eyedropper, #sidepanels, #palette_holder, #zoom_panel, #tool_opacity {
     display: none;
+}
+
+#tools_left, #tools_bottom {
+    display: none;
+}
+
+/* jQuery-Ui Override
+====================================================== */
+
+.ui-widget {
+    font-size: 11pt;
 }
